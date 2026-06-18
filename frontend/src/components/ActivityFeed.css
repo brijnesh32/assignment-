@@ -1,0 +1,147 @@
+.activity-feed {
+  max-width: 480px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  color: #1a1a1a;
+}
+
+.activity-feed__toolbar {
+  display: flex;
+  gap: 8px;
+  overflow-x: auto;
+  padding-bottom: 12px;
+  margin-bottom: 12px;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.activity-feed__filter {
+  flex-shrink: 0;
+  padding: 6px 14px;
+  border-radius: 999px;
+  border: 1px solid #d8d8d8;
+  background: #fff;
+  font-size: 13px;
+  cursor: pointer;
+  color: #444;
+}
+
+.activity-feed__filter--active {
+  background: #1a1a1a;
+  border-color: #1a1a1a;
+  color: #fff;
+}
+
+.activity-feed__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.activity-item {
+  display: flex;
+  gap: 12px;
+  padding: 10px 4px;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.activity-item--pending {
+  opacity: 0.55;
+}
+
+.activity-item__avatar {
+  flex-shrink: 0;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: #ececec;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 13px;
+  font-weight: 600;
+  color: #555;
+}
+
+.activity-item__body {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  min-width: 0;
+}
+
+.activity-item__text {
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+.activity-item__time {
+  font-size: 12px;
+  color: #888;
+}
+
+.activity-item--skeleton .activity-item__avatar--skeleton {
+  background: #e8e8e8;
+}
+
+.skeleton-line {
+  height: 10px;
+  border-radius: 4px;
+  background: #e8e8e8;
+}
+
+.skeleton-line--wide {
+  width: 70%;
+  margin-bottom: 6px;
+}
+
+.skeleton-line--narrow {
+  width: 35%;
+}
+
+.activity-feed__sentinel {
+  height: 1px;
+}
+
+.activity-feed__loading-more,
+.activity-feed__end {
+  text-align: center;
+  padding: 12px 0;
+  font-size: 13px;
+  color: #888;
+}
+
+.activity-feed__empty {
+  text-align: center;
+  padding: 48px 16px;
+}
+
+.activity-feed__empty-title {
+  font-size: 15px;
+  font-weight: 600;
+  margin: 0 0 4px;
+}
+
+.activity-feed__empty-subtitle {
+  font-size: 13px;
+  color: #888;
+  margin: 0;
+}
+
+.activity-feed__error {
+  background: #fdecec;
+  color: #b42318;
+  padding: 10px 12px;
+  border-radius: 6px;
+  font-size: 13px;
+  margin-bottom: 12px;
+}
+
+.activity-feed__demo-post {
+  margin-top: 16px;
+  padding: 8px 16px;
+  border-radius: 6px;
+  border: 1px solid #1a1a1a;
+  background: #fff;
+  cursor: pointer;
+  font-size: 13px;
+}
